@@ -1,0 +1,564 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SF-Pro-Display-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SF-Pro-Display-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SF-Pro-Display-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SF-Pro-Display-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SF-Pro-Display-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SF-Pro-Display-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Применение шрифта на сайте */
+body {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #F6F8FE;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.header-menu .logo {
+    color: #4F4F4F;
+    font-size: 26px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu .logo img {
+    background: #0088FF;
+    border-radius: 8px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.header-menu nav {
+
+}
+
+.header-menu nav a {
+    color: #777E96;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px;
+}
+
+.header-menu .btn {
+    background: #0088FF;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    width: 160px;
+    text-align: center;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 580px;
+    background: /* Градиент сверху (белый → прозрачный) */
+    linear-gradient(to bottom, rgb(255 255 255), rgb(255 255 255 / 0%)),
+    /* Градиент слева (белый → прозрачный) */
+    linear-gradient(to right, rgb(255 255 255), rgb(255 255 255 / 0%)),
+    /* Градиент справа (белый → прозрачный) */
+    linear-gradient(to left, rgb(255 255 255), rgb(255 255 255 / 0%)),
+    /* Фоновое изображение */
+    url(img/header-bac.png) no-repeat;;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.header .content {
+    margin-top: 100px;
+    padding-left: 100px;
+}
+
+.header .content .title {
+    font-size: 60px;
+    line-height: 100%;
+    font-weight: 600;
+    color: #448AFF;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.header .content .title span {
+    color: #7C7C7C;
+}
+
+.header .content .desc {
+    font-size: 20px;
+    color: #777E96;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.header .content a {
+    background: #0088FF;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    width: 160px;
+    text-align: center;
+    display: block;
+}
+
+.header .img-1 {
+    height: 483px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.advantages {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border-radius: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.advantages .title {
+    color: #4F4F4F;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.advantages .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.advantages .content .blocks {
+    width: 100%;
+    max-width: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.advantages .content .blocks .title {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.advantages .content .blocks .text {
+    color: #828282;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.advantages .content .blocks img {
+    width: 50px;
+}
+
+.advantages .content .block-1 .title {
+    color: #22C55E;
+}
+
+.advantages .content .block-2 .title {
+    color: #3B82F6;
+}
+
+.advantages .content .block-4 .title {
+    color: #F97316;
+}
+
+.advantages .content .block-5 .title {
+    color: #14B8A6;
+}
+
+.advantages .bottom {
+    color: #777777;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container-all .title-header {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-all .desc-header {
+    color: #4B5563;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.container-all .btn {
+    background: #0088FF;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    width: 160px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.container-all .container {
+    margin-top: 50px;
+}
+
+.container-all .container .title {
+    color: #4F4F4F;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.container-all .container .contents {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-all .container .contents .content {
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-start;
+    width: 38%;
+    height: 320px;
+    padding: 20px 30px 20px 20px;
+    margin: 20px;
+    position: relative;
+}
+
+.container-all .container .contents .content img {
+    margin-right: 20px;
+}
+
+.container-all .container .contents .content .right {
+    padding-right: 20px;
+}
+
+.container-all .container .contents .content .right .title {
+    color: #111827;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.container-all .container .contents .content .right .desc {
+    color: #4B5563;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.container-all .container .contents .content .right .content-btn {
+    border: 1px solid #4F4F4F;
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: #4F4F4F;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.container-all .container .contents .content .right .content-btn img {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+        
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 700px;
+    width: 90%;
+    position: relative;
+}
+        
+.popup h2 {
+    margin-top: 0;
+    color: #222222;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+        
+.popup p {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+        
+.close-btn {
+    background-color: #0088FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.faq .title-block {
+    color: #4F4F4F;
+    font-size: 36px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.faq .title-block img {
+    margin-right: 20px;
+}
+        
+.faq-item {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+        
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+}
+        
+.faq-question:hover {
+    color: #0066cc;
+}
+        
+.faq-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+        
+.faq-arrow.active {
+    transform: rotate(180deg);
+}
+        
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    color: #555;
+    line-height: 1.5;
+}
+        
+.faq-answer.active {
+    max-height: 500px;
+    padding: 20px;
+}
+
+.footer {
+    background: #1F2937;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.footer .logo {
+    color: #4F4F4F;
+    font-size: 26px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.footer .logo img {
+    background: #0088FF;
+    border-radius: 8px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.footer nav a {
+    color: #777E96;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px;
+}
+
+.footer .footer-btn {
+    background: #0088FF;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    width: 160px;
+    text-align: center;
+}
+
+/*/////////////////////////////////////////////////////////////*/
+/* Стили для кнопки открытия */
+        .open-popup-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 20px;
+        }
+
+        /* Стили для popup */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 500px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Стили для крестика закрытия */
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close-popup:hover {
+            color: #f44336;
+        }
+
+        /* Стили для контента popup */
+        .popup-body {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
